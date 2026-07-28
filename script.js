@@ -1,11 +1,11 @@
 function sayfaAc(id){
 
-    let sayfalar = document.querySelectorAll("section");
+let sayfalar=document.querySelectorAll("section");
 
-    sayfalar.forEach(sayi => {
-        sayi.classList.add("gizli");
-    });
+sayfalar.forEach(s=>{
+s.classList.add("gizli");
+});
 
-    document.getElementById(id).classList.remove("gizli");
+document.getElementById(id).classList.remove("gizli");
 
 }
