@@ -6,21 +6,90 @@
 }
 
 body{
+    background:linear-gradient(135deg,#ffd6e8,#fff);
+    min-height:100vh;
+}
 
-    background:linear-gradient(135deg,#ff9ac9,#ffd7e8);
 
+.app{
+    display:flex;
     height:100vh;
+}
+
+
+/* Sol menü */
+
+.menu{
+
+    width:80px;
+
+    background:rgba(255,255,255,0.5);
+
+    backdrop-filter:blur(15px);
 
     display:flex;
-    justify-content:center;
+
+    flex-direction:column;
+
     align-items:center;
+
+    padding-top:20px;
+
+    gap:20px;
+
+    border-right:1px solid #eee;
 
 }
 
-.welcome{
 
-    width:90%;
-    max-width:400px;
+.menu h1{
+
+    font-size:35px;
+
+}
+
+
+.menu button{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ff7eae;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.menu button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/* İçerik */
+
+.icerik{
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+
+section{
 
     background:white;
 
@@ -28,43 +97,33 @@ body{
 
     padding:30px;
 
-    text-align:center;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
 
 }
 
-h1{
 
-    font-size:40px;
+h2{
+
     color:#ff4d88;
 
+    margin-bottom:15px;
+
 }
+
 
 p{
 
-    margin-top:20px;
     color:#555;
-    line-height:28px;
+
+    line-height:25px;
 
 }
 
-button{
 
-    margin-top:35px;
+/* Gizleme */
 
-    width:100%;
+.gizli{
 
-    padding:15px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:#ff4d88;
-
-    color:white;
-
-    font-size:18px;
+    display:none;
 
 }
