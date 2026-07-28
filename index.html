@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hüsna ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hüsna ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="welcome">
+<div class="app">
 
-        <h1>🌸 Hüsna</h1>
+    <aside class="menu">
+        <h1>🌸</h1>
 
-        <p>
-            Senin sağlığın ve anılarımız...
-            Hepsi burada. ❤️
-        </p>
+        <button onclick="sayfaAc('ana')">🏠</button>
+        <button onclick="sayfaAc('regl')">📅</button>
+        <button onclick="sayfaAc('foto')">📸</button>
+        <button onclick="sayfaAc('not')">💌</button>
+        <button onclick="sayfaAc('ayar')">⚙️</button>
+    </aside>
 
-        <button id="girisBtn">
-            Başla
-        </button>
 
-    </div>
+    <main class="icerik">
 
-    <script src="script.js"></script>
+        <section id="ana">
+            <h2>🌸 Hüsna</h2>
+            <p>Birlikte güzel anılarımız ve özel günlerimiz burada ❤️</p>
+        </section>
+
+        <section id="regl" class="gizli">
+            <h2>📅 Regl Takibi</h2>
+            <p>Yakında burada olacak.</p>
+        </section>
+
+        <section id="foto" class="gizli">
+            <h2>📸 Anılarımız</h2>
+            <p>Fotoğraflar burada olacak.</p>
+        </section>
+
+        <section id="not" class="gizli">
+            <h2>💌 Notlar</h2>
+            <p>Notlarımız burada olacak.</p>
+        </section>
+
+        <section id="ayar" class="gizli">
+            <h2>⚙️ Ayarlar</h2>
+            <p>Ayarlar burada olacak.</p>
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
